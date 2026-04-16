@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Voting System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <!-- Existing Help button (modal) -->
+    <button onclick="showHelp()">Help</button>
+
+    <!-- ✅ Added direct Help button that links to help.html -->
+    <!--<button onclick="window.location.href='help.html'">Go to Help Page</button>-->
+
+    <div id="helpModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeHelp()">&times;</span>
+            <button onclick="window.location.href='help.html'">Help</button>
+
+            <h2>Why Voting Is Important</h2>
+            <p>
+                Voting allows citizens to choose their leaders and shape the future of the country.
+                It ensures democracy and equal representation.
+            </p>
+            <p>
+                In India, the first general election was conducted in 1951-1952
+                after independence.
+            </p>
+        </div>
+    </div>
+
+    <div class="logo">Online Voting System</div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="login.html">Login</a>
+        <a href="vote.html">Vote</a>
+        <a href="result.html">Results</a>
+        <a href="help.html">Help</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Secure & Transparent Online Voting</h1>
+    <p>Empowering democracy through technology.</p>
+    <a href="login.html" class="main-btn">Get Started</a>
+
+    <section class="info-section">
+        <h2>Why we want to Vote</h2>
+        <p>
+            - Foundation of Democracy: Voting is the main way citizens participate in governance.<br>
+            - Voice in Decision-Making: Your vote helps decide policies that affect education, healthcare, jobs, and the environment.<br>
+            - Protects Rights: Voting safeguards freedoms and human rights.<br>
+            - Every Vote Counts: Even a single vote can influence close elections.<br>
+            - Shapes the Future: Elections determine the direction of communities and nations.<br>
+            - Historical Struggle: Many groups fought hard for the right to vote.
+        </p>
+
+        <h2>History of Voting</h2>
+        <p>
+            - Independence (1947): India became the world’s largest democracy.<br>
+            - Constitutional Foundation (1950): Universal adult suffrage was guaranteed.<br>
+            - First General Election (1951–52): Over 173 million people were eligible to vote.<br>
+            - Evolution: EVMs introduced in the 1990s, voter ID cards, and online registration reforms.
+        </p>
+
+        <h2>Voter Helpline Numbers</h2>
+        <p>
+            National Voter Helpline: Dial <strong>1950</strong> (English & Hindi)<br>
+            Toll-Free Number: <strong>1800-11-1950</strong> (8:00 AM – 8:00 PM daily)
+        </p>
+    </section>
+</section>
+
+<script>
+function toggleInfo() {
+    var box = document.getElementById("infoBox");
+    box.style.display = box.style.display === "block" ? "none" : "block";
+}
+</script>
+
+</body>
+</html>
